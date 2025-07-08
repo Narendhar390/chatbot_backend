@@ -1,0 +1,10 @@
+# Python / Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+api/health_qa.csv
+venv/
+
+git
