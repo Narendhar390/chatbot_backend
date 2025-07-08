@@ -4,7 +4,7 @@ __pycache__/
 *.sqlite3
 *.log
 *.env
-api/health_qa.csv
+*.health_qa.csv
 venv/
 
 git
