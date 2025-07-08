@@ -6,5 +6,6 @@ __pycache__/
 *.env
 *.health_qa.csv
 venv/
+staticfiles/
 
 git
