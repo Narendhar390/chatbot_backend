@@ -64,7 +64,7 @@ import os
 import json
 from api.nlp_chatbot import HealthcareChatbot
 
-chatbot = HealthcareChatbot('api/health_qa.csv')
+# chatbot = HealthcareChatbot('api/health_qa.csv')
 from dotenv import load_dotenv
 load_dotenv()  # This loads variables from .env into environment
 
@@ -148,14 +148,14 @@ def chat(request):
     except Exception as e:
         print("❌ GPT API ERROR:", e)
         return JsonResponse({"reply": "Sorry, something went wrong."}, status=500)
-@require_http_methods(["POST"])
-# @permission_classes([IsAuthenticated])
-@csrf_exempt
-def chat_view(request):
-    if request.method == "POST":
-        data = json.loads(request.body)
-        user_message = data.get("message", "")
-        bot_reply = chatbot.get_response(user_message)
-        print("bot_reply")
-        return JsonResponse({"reply": bot_reply})
+# @require_http_methods(["POST"])
+# # @permission_classes([IsAuthenticated])
+# @csrf_exempt
+# def chat_view(request):
+#     if request.method == "POST":
+#         data = json.loads(request.body)
+#         user_message = data.get("message", "")
+#         bot_reply = chatbot.get_response(user_message)
+#         print("bot_reply")
+#         return JsonResponse({"reply": bot_reply})
     
