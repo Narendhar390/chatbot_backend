@@ -1,6 +1,10 @@
 import pandas as pd
 import nltk
-nltk.download('punkt')
+import nltk
+import os
+import nltk
+nltk.data.path.append('./nltk_data')
+nltk.download('punkt', download_dir='nltk_data')
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
