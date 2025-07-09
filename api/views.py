@@ -72,7 +72,6 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 
-
 def is_healthcare_related(message):
     keywords = [ # General
         "health", "medicine", "fitness", "doctor", "hospital", "treatment", "clinic",
