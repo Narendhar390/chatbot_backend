@@ -3,8 +3,8 @@ import nltk
 import nltk
 import os
 import nltk
-NLTK_DATA_PATH=os.path.join(os.path.dirname(__file__),'nltk_data')
-nltk_path.append(NLTK_DATA_PATH)
+NLTK_DATA_PATH = os.path.join(os.path.dirname(__file__), 'nltk_data')
+nltk.data.path.append(NLTK_DATA_PATH)
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
